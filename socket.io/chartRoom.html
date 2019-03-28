@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>基于nodejs-websocket的简单聊天室</title>
+  <link rel="stylesheet" href="./chartRoom.css">
+  <script src="./socket.io.js"></script>
+</head>
+<body>
+    <div class="position">
+      <div class="user">
+        <p>请输入用户名</p>
+        <input type="text" id='val'>
+        <div id='submit'>确 认</div>
+      </div>
+    </div>
+    <div class="chartRoom">
+      <div class="left">
+        <div class="left-top">
+          <div class="joinMessage"></div>
+          <div class='chartMessage'></div>
+        </div>
+        <div class="left-bottom">
+          <textarea id='text'></textarea>
+          <div class="send">发 送</div>
+        </div>
+      </div>
+      <div class="right"></div>
+    </div>
+    <script src="./chartRoom.js"></script>
+</body>
+</html>
